@@ -1,1 +1,104 @@
+tyres@Gambittou MINGW64 /c/Gambyte25
+$ ls
+Gambyte1/
+
+tyres@Gambittou MINGW64 /c/Gambyte25
+$ cd gambyte1
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ ls
+LICENSE  README.md
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git add  .
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git commit -m
+error: switch `m' requires a value
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git commit  -m
+error: switch `m' requires a value
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git commit  -m gambyte1
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'tyres@Gambittou.(none)')
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git config --global user.email Gambittou
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git config --global user.name Mr. Gambit
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git add .
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git add gambit.py
+fatal: pathspec 'gambit.py' did not match any files
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ touch gambit.py
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git add gambit.py
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git push
+To https://github.com/Gambittou/Gambyte1
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Gambittou/Gambyte1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git push
+To https://github.com/Gambittou/Gambyte1
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Gambittou/Gambyte1'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.79 KiB | 167.00 KiB/s, done.
+From https://github.com/Gambittou/Gambyte1
+   e142422..f18d129  main       -> origin/main
+Updating e142422..f18d129
+Fast-forward
+ Spaghetti.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Spaghetti.txt
+
+tyres@Gambittou MINGW64 /c/Gambyte25/gambyte1 (main)
+$
 
